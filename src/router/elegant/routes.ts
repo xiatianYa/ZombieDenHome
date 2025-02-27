@@ -42,12 +42,15 @@ export const generatedRoutes: GeneratedRoute[] = [
   {
     name: 'home',
     path: '/home',
-    component: 'layout.base$view.home',
+    component: 'layout.blank$view.home',
+    props: true,
     meta: {
       title: 'home',
       i18nKey: 'route.home',
       icon: 'mdi:monitor-dashboard',
-      order: 1
+      order: 1,
+      constant: true,
+      hideInMenu: true
     }
   },
   {
