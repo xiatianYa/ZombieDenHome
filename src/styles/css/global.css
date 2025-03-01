@@ -11,3 +11,12 @@ body,
 html {
   overflow-x: hidden;
 }
+
+.particle {
+  border-radius: 50%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+}

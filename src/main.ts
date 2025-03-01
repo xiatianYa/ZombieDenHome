@@ -1,6 +1,13 @@
 import { createApp } from 'vue';
 import './plugins/assets';
-import { setupAppVersionNotification, setupDayjs, setupIconifyOffline, setupLoading, setupNProgress } from './plugins';
+import {
+  setupAppVersionNotification,
+  setupDayjs,
+  setupIconifyOffline,
+  setupLoading,
+  setupNProgress,
+  setupParticleEffect
+} from './plugins';
 import { setupStore } from './store';
 import { setupRouter } from './router';
 import { setupI18n } from './locales';
@@ -14,6 +21,8 @@ async function setupApp() {
   setupIconifyOffline();
 
   setupDayjs();
+
+  setupParticleEffect();
 
   const app = createApp(App);
 
